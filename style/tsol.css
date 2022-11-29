@@ -1,3 +1,4 @@
-body { background-color: aquamarine;
+@font-face { font-family: DMsans;
+    src: url(..\FONTS\DMSans-Regular.ttf);
 
 }

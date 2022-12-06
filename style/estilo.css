@@ -1,5 +1,5 @@
-@font-face { font-family: DMsans;
-    src: url(DMSans-Mediumttf);
+@font-face { font-family: Dmsans;
+    src: url(..\FONTS\DMSans-Regular.ttf);
    
 }
 
@@ -12,13 +12,10 @@ html {
   background-attachment: fixed;
 }
 
-body {font:'DMsans';
+body {font:'Dmsans';
 font-size: 200%;
 color: azure;
 
-}
-
-.moonlight,.lambs,.parasite,.titanic {
 }
 
 .moonlight {  text-align: left;
@@ -30,6 +27,25 @@ color: azure;
   
   
 }
+
+.mposter { position: absolute;
+  left: 50px;
+  bottom: 200px;
+  border-radius: 10px;
+  border-style: groove;
+  border-collapse: separate;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+
+}
+.poster1:hover .mposter {
+  opacity: 0.3;
+}
+  
+
 .parasite{ 
   text-align: left;
   position:fixed;
@@ -45,7 +61,7 @@ color: azure;
 .titanic{ text-align: right;
   position:fixed;
   left:-520px;
-  top: 620px;
+  top: 535px;
   bottom: 150px;
   height:30px;
   width:100%;
@@ -56,7 +72,7 @@ color: azure;
 .lambs{ text-align: right;
   position:fixed;
   left:-60px;
-  top: 620px;
+  top: 535px;
   bottom: 150px;
   height:30px;
   width:100%;

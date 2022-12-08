@@ -18,16 +18,24 @@ color: azure;
 
 }
 
+.demo {text-align: center; 
+width: 300px;  
+height: 200px;  
+padding: 100px;
+padding-left: 600px;
+
+}
+
 .moonlight {  text-align: left;
   position:fixed;
   left:100px;
   bottom:150px;
   height:30px;
   width: 100%;
+ 
   
-  
+   
 }
-
 .mposter { position: absolute;
   left: 50px;
   bottom: 200px;
@@ -44,6 +52,11 @@ color: azure;
 .poster1:hover .mposter {
   opacity: 0.3;
 }
+.mposter:hover+.moonlight {
+	bottom: 150px;
+	opacity: 1;
+  display: block;
+}
   
 
 .parasite{ 
@@ -53,11 +66,33 @@ color: azure;
   bottom: 150px;
   height:30px;
   width:100%;
-  
-  
-  
 
 }
+.pposter { position:absolute;
+  left: 350px;
+  bottom: 200px;
+  border-radius: 10px;
+  border-style: groove;
+  border-collapse: separate;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+}
+.poster2:hover .pposter {
+  opacity: 0.4;
+
+
+}
+.pposter:hover+.parasite {
+	bottom: 150px;
+	opacity: 1;
+
+  
+}
+
 .titanic{ text-align: right;
   position:fixed;
   left:-520px;
@@ -65,10 +100,30 @@ color: azure;
   bottom: 150px;
   height:30px;
   width:100%;
-  
-  
+
 
 }
+.tposter { position: absolute;
+  right: 450px;
+  bottom: 200px;
+  border-radius: 10px;
+  border-style: groove;
+  border-collapse: separate;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.poster3:hover .tposter {
+  opacity: 0.4;
+}
+.tposter:hover+.titanic {
+	bottom: 150px;
+	opacity: 0;
+}
+
 .lambs{ text-align: right;
   position:fixed;
   left:-60px;
@@ -76,8 +131,26 @@ color: azure;
   bottom: 150px;
   height:30px;
   width:100%;
-  
-  
 
 
+}
+.tsolposter {
+position: absolute;
+  right: 100px;
+  bottom: 200px;
+  border-radius: 10px;
+  border-style: groove;
+  border-collapse: separate;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+.poster4:hover .tsolposter {
+  opacity: 0.4;
+}
+.tsolposter:hover+.lambs {
+	bottom: 150px;
+	opacity: 0;
 }

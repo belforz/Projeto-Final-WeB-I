@@ -1,4 +1,251 @@
-@font-face { font-family: DMsans;
-    src: url(..\FONTS\DMSans-Regular.ttf);
+@font-face {
+  font-family: DMsans;
+  src: url(..\FONTS\DMSans-Regular.ttf);
+
+}
+
+body {
+  font-family: 'DMsans';
+
+  background: linear-gradient(to right,
+      #00fff4,
+      #ebafe2,
+      #9acefe)
+}
+
+h3 {
+  font-size: 200%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.937);
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+h3:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+
+}
+
+.vari {
+  text-align: right;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.varilogo {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/70/Variety_Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+
+.nyt {
+  text-align: right;
+  position: absolute;
+  top: 300px;
+  right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+
+.nytlogo {
+  background-image: url(https://cdn.freebiesupply.com/images/large/2x/new-york-times-logo-png-transparent.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+
+}
+
+
+
+
+
+.uklogo { text-align: right;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.inde {background-image: url(https://1000logos.net/wp-content/uploads/2020/02/The-Independent-Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+  position: absolute;
+  top: 480px;
+  right: 20px;
+
+}
+
+
+
+.isinopse {
+  width: 500px;
+}
+
+box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+  width: 500px;
+  height: 250px;
+}
+
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #00fff4,
+      #ebafe2,
+      #9acefe,
+      #463569);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sinopse {
+  text-align: left;
+  position: fixed;
+  left: 20px;
+  ;
+  top: 350px;
+  box-shadow: rgba(53, 34, 57, 0.67) 1.95px 1.95px 2.6px;
+}
+
+
+.image1 {
+  text-align: center;
+  position: fixed;
+  left: 600px;
+  top: 100px;
+  display: grid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+  background: #333 url(https://d135u4jtzauizi.cloudfront.net/_normal/moonlightthumb.jpg) center;
+  background-size: cover;
+  color: white;
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+}
+
+.image1:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.image1:before {
+  grid-row: 1 / 2;
+  border-right: none;
+  border-bottom: none;
+}
+
+.image1:after {
+  grid-row: 1 / span 2;
+  border-left: none;
+}
+
+.fu {
+  opacity: 0.5;
+
+}
+
+.image2 {
+  text-align: center;
+  position: fixed;
+  left: 600px;
+  top: 300px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+  background: #333 url(https://images.squarespace-cdn.com/content/v1/5d4ba6863e231f0001e703e7/1587956164295-GVA03T30YJOZKZ6T6TB7/DcFgyyLX0AETSfA.jpg) center;
+  background-size: cover;
+  color: white;
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+
+}
+
+.image2:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.image3 {
+  text-align: center;
+  position: fixed;
+  left: 600px;
+  top: 500px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  grid-template-columns: max-content auto;
+  grid-template-rows: auto max-content;
+  background: #333 url(https://cdn.britannica.com/83/194183-050-95BC4118/Alex-Hibbert-Moonlight-Mahershala-Ali-Barry-Jenkins.jpg) center;
+  background-size: cover;
+  color: rgb(176, 134, 213);
+  width: 200px;
+  height: 100px;
+  padding: 2rem;
+  opacity: 0.8;
 
 }

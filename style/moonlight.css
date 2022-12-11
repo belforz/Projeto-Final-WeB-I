@@ -20,6 +20,10 @@ button {position: absolute;
   bottom:0px;
 
 }
+.uklogo,.vari,.nyt{
+  font-style: italic;
+}
+
 
 
 .Comentario{ position: absolute;
